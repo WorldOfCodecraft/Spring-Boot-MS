@@ -1,0 +1,39 @@
+server.port: 7000
+server.error.include-message: always
+
+app:
+  product-service:
+    host: localhost
+    port: 7001
+  recommendation-service:
+    host: localhost
+    port: 7002
+  review-service:
+    host: localhost
+    port: 7003
+
+logging:
+  level:
+    root: INFO
+    com.framework: DEBUG
+
+---
+#MNote, p101, 01
+#Create a new Spring profile named docker to be used when we run our microservices as containers in Docker
+spring.config.activate.on-profile: docker
+
+server.port: 8080
+
+# MNote, p110
+# Service: Specify where to find the core services
+# Host: Specified in the docker-compose.yml file
+app:
+  product-service:
+    host: product
+    port: 8080
+  recommendation-service:
+    host: recommendation
+    port: 8080
+  review-service:
+    host: review
+    port: 8080

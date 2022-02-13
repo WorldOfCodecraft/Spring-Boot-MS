@@ -5,3 +5,10 @@ logging:
   level:
     root: INFO
     com.framework: DEBUG
+
+---
+#MNote, p101, 03
+#Create a new Spring profile named docker to be used when we run our microservices as containers in Docker
+spring.config.activate.on-profile: docker
+
+server.port: 8080
