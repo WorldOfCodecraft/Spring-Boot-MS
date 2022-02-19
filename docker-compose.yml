@@ -1,6 +1,8 @@
 version: '2.1'
 
 services:
+# MNote,
+# The name also becomes the host name
   product:
     build: microservices/product-service
     mem_limit: 512m
