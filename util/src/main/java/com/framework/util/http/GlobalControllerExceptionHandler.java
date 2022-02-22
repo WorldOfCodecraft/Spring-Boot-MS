@@ -15,7 +15,7 @@ import com.framework.api.exceptions.InvalidInputException;
 import com.framework.api.exceptions.NotFoundException;
 
 /**
- * MNote
+ * MNote, web
  * @RestControllerAdvice annotation is also a @Component, so it will be auto-detected
  *
  * @RestControllerAdvice = @ControllerAdvice + @ResponseBody:
