@@ -8,6 +8,8 @@ group = 'com.framework.microservices.core.product'
 version = '1.0.0-SNAPSHOT'
 sourceCompatibility = '1.8'
 
+//MNote, p145, 02
+//Define a variable
 ext {
     mapstructVersion = "1.3.1.Final"
 }
@@ -28,6 +30,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     implementation "org.mapstruct:mapstruct:${mapstructVersion}"
 
+    //MNote, p145, 03
+    //01. To make the compile-time generation work in popular IDEs such as IntelliJ IDEA
+    //02. Since MapStruct generates the implementation of the bean mappings at compile time
+    //by processing MapStruct annotations,
+    //we need to add an annotationProcessor and a testAnnotationProcessor dependency
     compileOnly "org.mapstruct:mapstruct-processor:${mapstructVersion}"
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
     testAnnotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
@@ -35,6 +42,9 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'io.projectreactor:reactor-test'
 
+    //MNote, p146, 02
+    //enable the use of MongoDB and MySQL when running automated integration tests,
+    //use Testcontainers and its support for JUnit 5, MongoDB, and MySQL
     implementation platform('org.testcontainers:testcontainers-bom:1.15.2')
     testImplementation 'org.testcontainers:testcontainers'
     testImplementation 'org.testcontainers:junit-jupiter'
