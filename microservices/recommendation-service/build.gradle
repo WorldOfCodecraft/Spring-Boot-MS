@@ -45,7 +45,8 @@ dependencies {
     //MNote, p146, 01
     //enable the use of MongoDB and MySQL when running automated integration tests,
     //use Testcontainers and its support for JUnit 5, MongoDB, and MySQL
-    implementation platform('org.testcontainers:testcontainers-bom:1.15.2')
+    //It handles the startup and tear down of databases during the execution of the integration tests
+    implementation platform('org.testcontainers:testcontainers-bom:1.17.2')
     testImplementation 'org.testcontainers:testcontainers'
     testImplementation 'org.testcontainers:junit-jupiter'
     testImplementation 'org.testcontainers:mongodb'

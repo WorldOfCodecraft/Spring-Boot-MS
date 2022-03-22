@@ -5,6 +5,11 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;
 
+/**
+ * MNote, p149
+ * The CrudRepository base class provides standard methods for performing basic
+ * create, read, update, and delete operations on the data stored in the databases
+ */
 public interface ReviewRepository extends CrudRepository<ReviewEntity, Integer> {
 
     //MNote, p150
