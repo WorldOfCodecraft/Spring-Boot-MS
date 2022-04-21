@@ -1,7 +1,9 @@
 server.port: 7003
 server.error.include-message: always
 
-# Strongly recommend to set this property to "none" in a production environment!
+#MNote, p176
+# Set this property to "none" in a production environment
+# his prevents Spring Data JPA from manipulating the structure of the SQL tables
 spring.jpa.hibernate.ddl-auto: update
 
 spring.datasource:
@@ -9,6 +11,10 @@ spring.datasource:
   username: user
   password: pwd
 
+#MNote, p177
+# By default, HikariCP is used by Spring Data JPA as the JDBC connection pool.
+# To minimize startup problems on computers with limited hardware resources,
+# the initializationFailTimeout parameter is set to 60 seconds.
 spring.datasource.hikari.initializationFailTimeout: 60000
 
 logging:

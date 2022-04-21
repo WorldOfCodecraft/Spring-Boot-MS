@@ -1,6 +1,8 @@
 server.port: 7001
 server.error.include-message: always
 
+#MNote, p175
+#without Docker using the default Spring profile, reaches database on localhost:27017
 spring.data.mongodb:
   host: localhost
   port: 27017
