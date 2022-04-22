@@ -6,21 +6,46 @@ The primary objective of our solution is to deliver a framework that leverages t
 With comprehensive documentation and best practices, teams can integrate this technology stack effortlessly. We prioritize robustness by incorporating fault-tolerant architecture, ensuring system resilience and uninterrupted service delivery.
 
 ## DEMO: REST API, Spring Doc
-### DEMO API's using SPRING API:
+### LIVE SERVER DEMO:
 https://mxmtxt.com/openapi/swagger-ui.html
 
 
 ## DEMO APS's portal
+### 01 API PORTAL
+1. Used to switch between sites, when multiple sites are available
+2. Used to show the API for create action API, you'll find very detailed documentation and an embedded tool to test requests
+3. Used to show the API for get action API, the tool in this API can be used to retrieve data
+4. Used to show the API for delete action API, the tool in this API can be used to delete data.
+5. Other schemas for information, showing the format of information entities used to transfer
+
+### Tips: The demo server has backups, feel free to try dangerous things :)
 ![alt text](https://github.com/WorldOfCodecraft/Spring-Boot-MS/blob/master/res/01-OpenAI.png?raw=true)
 
+### 02 Function Area
+
+6. Click the "Try it out" button to open an online tool to test API!
 ![alt text](https://github.com/WorldOfCodecraft/Spring-Boot-MS/blob/master/res/02-API-test-1.png?raw=true)
 
+### Tips: For test creation usages, you may want to try 2222, or any numbers more than 5 digits
+7. Edit the nubmer at 2, and click button 3 to execute
 ![alt text](https://github.com/WorldOfCodecraft/Spring-Boot-MS/blob/master/res/03-API-test-2.png?raw=true)
 
+### Read the response
+8. Response will be displayed at 4, and you will find the result code, and there's a section below this section explaining the codes
 ![alt text](https://github.com/WorldOfCodecraft/Spring-Boot-MS/blob/master/res/04-API-test-3.png?raw=true)
 
 ### DEMO TEST SCRIPT
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+### There's a "TEST ALL" bash script file under the root
+### It runs under standard Unix/Linux env, and can be easily modified to fit Windows Terminal
+![alt text](https://github.com/WorldOfCodecraft/Spring-Boot-MS/blob/master/res/05-Prj-test-1.png?raw=true)
+
+### There are five parts of the test file
+1. Cleaning part, will remove all orphans
+2. Create new containers
+3. Will test composite API, the API exposed to outside
+4. Will test not only the existed one, but also non-existed ones
+5. Will give an overall feedback
+![alt text](https://github.com/WorldOfCodecraft/Spring-Boot-MS/blob/master/res/06-Prj-test-2.png?raw=true)
 
 
 
