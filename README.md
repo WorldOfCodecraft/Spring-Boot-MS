@@ -9,6 +9,21 @@ With comprehensive documentation and best practices, teams can integrate this te
 ### DEMO API's using SPRING API:
 https://mxmtxt.com/openapi/swagger-ui.html
 
+
+## DEMO APS's portal
+![alt text](https://github.com/WorldOfCodecraft/Spring-Boot-MS/blob/master/res/01-OpenAI.png?raw=true)
+
+![alt text](https://github.com/WorldOfCodecraft/Spring-Boot-MS/blob/master/res/02-API-test-1.png?raw=true)
+
+![alt text](https://github.com/WorldOfCodecraft/Spring-Boot-MS/blob/master/res/03-API-test-2.png?raw=true)
+
+![alt text](https://github.com/WorldOfCodecraft/Spring-Boot-MS/blob/master/res/04-API-test-3.png?raw=true)
+
+### DEMO TEST SCRIPT
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+
+
 ## Deployment
 
 To deploy this project run the following commands under the project root
